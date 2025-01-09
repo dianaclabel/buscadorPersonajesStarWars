@@ -7,6 +7,17 @@ public class Pelicula {
     private String productor;
 
     public Pelicula(String nombre, String director, String fechaDePublicacion, String productor) {
+        this.nombre = nombre;
+        this.director = director;
+        this.fechaDePublicacion = fechaDePublicacion;
+        this.productor = productor;
+    }
+
+    public Pelicula( PeliculaSwapi pelicula ) {
+        this.nombre = pelicula.title();
+        this.director = pelicula.director();
+        this.fechaDePublicacion = pelicula.release_date();
+        this.productor = pelicula.producer();
 
     }
 
@@ -40,5 +51,15 @@ public class Pelicula {
 
     public void setProductor(String productor) {
         this.productor = productor;
+    }
+
+    @Override
+    public String toString() {
+        return
+                "(nombre='" + nombre +
+                "', director='" + director +
+                "', fechaDePublicacion='" + fechaDePublicacion +
+                "', productor='" + productor  +
+                "')";
     }
 }
