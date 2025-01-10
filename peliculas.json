@@ -1,0 +1,14 @@
+[
+  {
+    "nombre": "A New Hope",
+    "director": "George Lucas",
+    "fechaDePublicacion": "1977-05-25",
+    "productor": "Gary Kurtz, Rick McCallum"
+  },
+  {
+    "nombre": "Attack of the Clones",
+    "director": "George Lucas",
+    "fechaDePublicacion": "2002-05-16",
+    "productor": "Rick McCallum"
+  }
+]
